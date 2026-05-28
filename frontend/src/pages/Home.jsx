@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import HeroSection from '@/components/sections/HeroSection';
+import HeroCarousel from '@/components/sections/HeroCarousel';
 import StatsSection from '@/components/sections/StatsSection';
 import ProductCard from '@/components/sections/ProductCard';
 import CTASection from '@/components/sections/CTASection';
@@ -16,13 +16,7 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <HeroSection 
-        title="Advancing Healthcare, Empowering Lives."
-        subtitle="Atrisma Pharmaceuticals is dedicated to developing innovative solutions that improve patient outcomes worldwide."
-        image="https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2000&auto=format&fit=crop"
-        ctaText="Explore Our Products"
-        ctaLink="/products"
-      />
+      <HeroCarousel />
       
       <StatsSection />
 
