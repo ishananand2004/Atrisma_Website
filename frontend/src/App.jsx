@@ -1,19 +1,20 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Layout from '@/components/layout/Layout';
 import CookieConsent from '@/components/layout/CookieConsent';
 import PageLoader from '@/components/layout/PageLoader';
-import Home from '@/pages/Home';
-import About from '@/pages/About';
-import Products from '@/pages/Products';
-import Research from '@/pages/Research';
-import GlobalPresence from '@/pages/GlobalPresence';
-import Careers from '@/pages/Careers';
-import Contact from '@/pages/Contact';
-import ProductDetail from '@/pages/ProductDetail';
 import { ThemeProvider } from '@/context/ThemeContext';
+
+const Home = lazy(() => import('@/pages/Home'));
+const About = lazy(() => import('@/pages/About'));
+const Products = lazy(() => import('@/pages/Products'));
+const Research = lazy(() => import('@/pages/Research'));
+const GlobalPresence = lazy(() => import('@/pages/GlobalPresence'));
+const Careers = lazy(() => import('@/pages/Careers'));
+const Contact = lazy(() => import('@/pages/Contact'));
+const ProductDetail = lazy(() => import('@/pages/ProductDetail'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,16 +46,18 @@ function App() {
           <Router>
             <ScrollToTop />
             <Layout>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/products" element={<Products />} />
-                <Route path="/products/:slug" element={<ProductDetail />} />
-                <Route path="/research" element={<Research />} />
-                <Route path="/global-presence" element={<GlobalPresence />} />
-                <Route path="/careers" element={<Careers />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
+              <Suspense fallback={<div className="flex h-screen items-center justify-center bg-white dark:bg-[#030014]"><div className="w-8 h-8 border-4 border-[var(--color-brand-cyan)] border-t-transparent rounded-full animate-spin"></div></div>}>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/products" element={<Products />} />
+                  <Route path="/products/:slug" element={<ProductDetail />} />
+                  <Route path="/research" element={<Research />} />
+                  <Route path="/global-presence" element={<GlobalPresence />} />
+                  <Route path="/careers" element={<Careers />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </Suspense>
             </Layout>
           </Router>
         </motion.div>

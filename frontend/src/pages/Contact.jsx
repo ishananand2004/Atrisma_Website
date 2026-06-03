@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import { submitContact } from '@/services/api';
@@ -37,6 +38,11 @@ export default function Contact() {
 
   return (
     <div className="w-full min-h-screen bg-white dark:bg-[#030014] transition-colors duration-300">
+      <Helmet>
+        <title>Contact Us | Atrisma Pharmaceuticals</title>
+        <meta name="description" content="Get in touch with Atrisma Pharmaceuticals. We're here to answer any questions about our products, partnerships, or careers." />
+      </Helmet>
+
       <PageHeader 
         title="Get in Touch"
         subtitle="We're here to answer any questions you may have about our products, partnerships, or careers."
@@ -53,13 +59,13 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <GlassCard className="p-8">
-                <div className="w-12 h-12 bg-neonCyan/10 text-neonCyan rounded-full flex items-center justify-center mb-6 border border-neonCyan/20">
+              <div className="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-[var(--color-brand-cyan)]/10 text-[var(--color-brand-cyan)] rounded-full flex items-center justify-center mb-6 border border-[var(--color-brand-cyan)]/20">
                   <MapPin size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Headquarters</h3>
                 <p className="text-gray-600 dark:text-white/60 transition-colors">{headOffice.address}</p>
-              </GlassCard>
+              </div>
             </motion.div>
 
             <motion.div
@@ -68,13 +74,13 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <GlassCard className="p-8">
-                <div className="w-12 h-12 bg-neonPurple/10 text-neonPurple rounded-full flex items-center justify-center mb-6 border border-neonPurple/20">
+              <div className="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-[var(--color-brand-purple)]/10 text-[var(--color-brand-purple)] rounded-full flex items-center justify-center mb-6 border border-[var(--color-brand-purple)]/20">
                   <Phone size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Phone</h3>
                 <p className="text-gray-600 dark:text-white/60 transition-colors">{headOffice.phone}</p>
-              </GlassCard>
+              </div>
             </motion.div>
 
             <motion.div
@@ -83,13 +89,13 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <GlassCard className="p-8">
-                <div className="w-12 h-12 bg-neonCyan/10 text-neonCyan rounded-full flex items-center justify-center mb-6 border border-neonCyan/20">
+              <div className="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-[var(--color-brand-cyan)]/10 text-[var(--color-brand-cyan)] rounded-full flex items-center justify-center mb-6 border border-[var(--color-brand-cyan)]/20">
                   <Mail size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Email</h3>
                 <p className="text-gray-600 dark:text-white/60 transition-colors">contact@atrisma.com</p>
-              </GlassCard>
+              </div>
             </motion.div>
           </div>
 
@@ -101,11 +107,11 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <GlassCard className="p-8 md:p-12 h-full">
-              <h2 className="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-8 transition-colors">Send us a <span className="text-neonCyan">Message</span></h2>
+            <div className="glass-panel p-8 md:p-12 h-full rounded-3xl shadow-sm">
+              <h2 className="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-8 transition-colors">Send us a <span className="text-[var(--color-brand-cyan)]">Message</span></h2>
               
               {submitStatus && (
-                <div className={`p-4 mb-6 rounded-lg ${submitStatus.type === 'success' ? 'bg-green-500/10 text-green-400 border border-green-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'}`}>
+                <div className={`p-4 mb-6 rounded-lg ${submitStatus.type === 'success' ? 'bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20' : 'bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20'}`}>
                   {submitStatus.message}
                 </div>
               )}
@@ -120,7 +126,7 @@ export default function Contact() {
                       onChange={handleChange} 
                       placeholder="John Doe" 
                       required 
-                      className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors"
+                      className="bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-[var(--color-brand-cyan)] transition-colors"
                     />
                   </div>
                   <div className="space-y-2">
@@ -132,7 +138,7 @@ export default function Contact() {
                       onChange={handleChange} 
                       placeholder="john@example.com" 
                       required 
-                      className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors"
+                      className="bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-[var(--color-brand-cyan)] transition-colors"
                     />
                   </div>
                 </div>
@@ -145,7 +151,7 @@ export default function Contact() {
                     onChange={handleChange} 
                     placeholder="How can we help you?" 
                     required 
-                    className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors"
+                    className="bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-[var(--color-brand-cyan)] transition-colors"
                   />
                 </div>
 
@@ -158,11 +164,11 @@ export default function Contact() {
                     placeholder="Your message here..." 
                     rows={6} 
                     required 
-                    className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors resize-none"
+                    className="bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-[var(--color-brand-cyan)] transition-colors resize-none"
                   />
                 </div>
 
-                <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto bg-neonCyan hover:bg-white text-black font-bold px-8 py-6 text-lg transition-colors shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+                <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto bg-[var(--color-brand-cyan)] hover:bg-[#0891b2] text-white font-bold px-8 py-6 text-lg transition-colors shadow-md">
                   {isSubmitting ? 'Sending...' : (
                     <>
                       Send Message <Send size={18} className="ml-2" />
@@ -170,7 +176,7 @@ export default function Contact() {
                   )}
                 </Button>
               </form>
-            </GlassCard>
+            </div>
           </motion.div>
 
         </div>

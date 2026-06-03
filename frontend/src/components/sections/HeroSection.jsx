@@ -4,7 +4,7 @@ import ParticleBackground from '../ui/ParticleBackground';
 import { ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
-  const words = "Trusted 10+ years Pioneering the Future of Medicine".split(" ");
+  const words = "Pioneering the Future of Medicine".split(" ");
 
   const container = {
     hidden: { opacity: 0 },
@@ -36,7 +36,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-screen min-h-[700px] overflow-hidden bg-gray-50 dark:bg-[#030014] transition-colors duration-300 flex items-center">
+    <section className="relative w-full h-screen min-h-[700px] overflow-hidden bg-[#030014] flex items-center">
       {/* Background Mesh and Particles */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-1/4 w-[800px] h-[800px] bg-neonPurple/20 rounded-full mix-blend-screen filter blur-[150px] opacity-70 animate-pulse" />
@@ -45,16 +45,20 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 md:px-10 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center relative">
+          
+          {/* Dark radial overlay for text contrast */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#030014]/60 blur-[60px] -z-10 pointer-events-none rounded-full" />
+
           {/* Tag */}
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8 flex justify-center"
           >
-            <span className="inline-block px-4 py-1.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 backdrop-blur-md text-teal-600 dark:text-neonCyan text-[11px] font-bold tracking-[0.25em] uppercase shadow-[0_0_15px_rgba(6,182,212,0.15)]">
-              Transforming Lives Through Science
+            <span className="inline-block px-4 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white/90 text-xs font-bold tracking-[0.2em] uppercase shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] transition-shadow duration-300">
+              TRUSTED 10+ YEARS
             </span>
           </motion.div>
 
@@ -64,12 +68,12 @@ export default function HeroSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight tracking-tight transition-colors duration-300"
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
           >
             {words.map((word, index) => (
               <motion.span variants={child} style={{ marginRight: "0.25em" }} key={index}>
                 {word === "Medicine" ? (
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonPurple to-neonCyan text-glow">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#4facfe] pb-1">
                     {word}
                   </span>
                 ) : (
@@ -83,7 +87,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="text-lg md:text-xl text-gray-600 dark:text-white/60 mb-12 max-w-2xl mx-auto font-light leading-relaxed transition-colors duration-300"
+            className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto font-light leading-relaxed"
           >
             Atrisma Pharmaceuticals is dedicated to developing innovative solutions that improve patient outcomes worldwide across critical therapeutic areas.
           </motion.p>
@@ -97,19 +101,19 @@ export default function HeroSection() {
           >
             <Link
               to="/products"
-              className="relative group w-full sm:w-auto"
+              className="relative group w-full sm:w-auto transition-transform duration-300 hover:scale-105"
             >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neonPurple to-neonCyan blur opacity-75 group-hover:opacity-100 transition duration-300" />
-              <div className="relative flex items-center justify-center px-8 py-4 bg-gray-900 dark:bg-black rounded-full leading-none">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neonPurple to-neonCyan blur opacity-75 group-hover:opacity-100 transition duration-300 group-hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]" />
+              <div className="relative flex items-center justify-center px-8 py-4 bg-black rounded-full leading-none">
                 <span className="text-white font-bold tracking-wide">Explore Therapeutics</span>
               </div>
             </Link>
 
             <Link
               to="/about"
-              className="relative group w-full sm:w-auto flex items-center justify-center px-8 py-4 rounded-full border border-gray-300 dark:border-white/20 hover:border-gray-400 dark:hover:border-white/50 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition duration-300 backdrop-blur-sm"
+              className="relative group w-full sm:w-auto flex items-center justify-center px-8 py-4 rounded-full border border-white/20 hover:border-white/50 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm shadow-[0_0_15px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
             >
-              <span className="text-gray-900 dark:text-white font-semibold tracking-wide transition-colors">Learn About Us</span>
+              <span className="text-white font-semibold tracking-wide">Learn About Us</span>
             </Link>
           </motion.div>
         </div>

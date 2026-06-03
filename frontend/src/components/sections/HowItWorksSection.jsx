@@ -52,7 +52,7 @@ export default function HowItWorksSection() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors duration-300"
           >
-            The Atrisma <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonPurple">Process</span>
+           Atrisma Pharmaceuticals <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonPurple">Process</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
