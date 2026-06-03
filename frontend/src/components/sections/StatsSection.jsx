@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import { COMPANY_STATS } from '@/constants';
-import { Card, CardContent } from '@/components/ui/card';
+import GlassCard from '../ui/GlassCard';
 
 // Custom hook for counting animation
 const useCounter = (end, duration = 2000, inView = false) => {
@@ -49,34 +49,44 @@ const StatCard = ({ stat, index }) => {
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
+      className="h-full"
     >
-      <Card className="border-none shadow-md hover:shadow-lg transition-shadow text-center h-full bg-white/50 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-6 px-4">
-          <h3 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-3">
-            {count}
-          </h3>
-          <p className="text-gray-600 font-medium">{stat.label}</p>
-        </CardContent>
-      </Card>
+      <GlassCard hoverEffect={true} className="text-center h-full p-8 flex flex-col justify-center">
+        <h3 className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br dark:from-white dark:to-white/40 mb-3 drop-shadow-sm dark:drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-colors duration-300">
+          {count}
+        </h3>
+        <p className="text-neonCyan font-medium tracking-wide uppercase text-sm mt-2">{stat.label}</p>
+      </GlassCard>
     </motion.div>
   );
 };
 
 export default function StatsSection() {
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-32 bg-white dark:bg-[#01000B] relative overflow-hidden border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
       {/* Decorative element */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neonCyan/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neonPurple/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4 pointer-events-none" />
       
-      <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-            Global Impact at a Glance
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+      <div className="container mx-auto px-6 md:px-10 relative z-10">
+        <div className="text-center mb-20">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors duration-300"
+          >
+            Global <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonPurple">Impact</span>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-lg text-gray-600 dark:text-white/50 max-w-2xl mx-auto transition-colors duration-300"
+          >
             Our commitment to healthcare excellence is reflected in our growing global footprint and the millions of lives we touch every day.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

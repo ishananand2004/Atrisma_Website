@@ -6,6 +6,8 @@ import { OFFICE_LOCATIONS } from '@/constants';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import PageHeader from '@/components/layout/PageHeader';
+import GlassCard from '@/components/ui/GlassCard';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -34,135 +36,141 @@ export default function Contact() {
   const headOffice = OFFICE_LOCATIONS[0];
 
   return (
-    <div className="w-full min-h-screen bg-gray-50">
-      {/* Simple Header */}
-      <div className="bg-primary pt-32 pb-20 px-4 md:px-8 text-center text-white">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Get in Touch</h1>
-        <p className="text-xl text-lightAccent max-w-2xl mx-auto">
-          We're here to answer any questions you may have about our products, partnerships, or careers.
-        </p>
-      </div>
+    <div className="w-full min-h-screen bg-white dark:bg-[#030014] transition-colors duration-300">
+      <PageHeader 
+        title="Get in Touch"
+        subtitle="We're here to answer any questions you may have about our products, partnerships, or careers."
+      />
 
-      <div className="container mx-auto px-4 md:px-8 py-16 -mt-10">
+      <div className="container mx-auto px-6 md:px-10 py-24">
         <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           
           {/* Contact Info Cards */}
           <div className="lg:col-span-1 space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
             >
-              <div className="w-12 h-12 bg-blue-50 text-accent rounded-full flex items-center justify-center mb-6">
-                <MapPin size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-2">Headquarters</h3>
-              <p className="text-gray-600 mb-4">{headOffice.address}</p>
+              <GlassCard className="p-8">
+                <div className="w-12 h-12 bg-neonCyan/10 text-neonCyan rounded-full flex items-center justify-center mb-6 border border-neonCyan/20">
+                  <MapPin size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Headquarters</h3>
+                <p className="text-gray-600 dark:text-white/60 transition-colors">{headOffice.address}</p>
+              </GlassCard>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
             >
-              <div className="w-12 h-12 bg-blue-50 text-accent rounded-full flex items-center justify-center mb-6">
-                <Phone size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-2">Phone</h3>
-              <p className="text-gray-600 mb-4">{headOffice.phone}</p>
+              <GlassCard className="p-8">
+                <div className="w-12 h-12 bg-neonPurple/10 text-neonPurple rounded-full flex items-center justify-center mb-6 border border-neonPurple/20">
+                  <Phone size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Phone</h3>
+                <p className="text-gray-600 dark:text-white/60 transition-colors">{headOffice.phone}</p>
+              </GlassCard>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
             >
-              <div className="w-12 h-12 bg-blue-50 text-accent rounded-full flex items-center justify-center mb-6">
-                <Mail size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-2">Email</h3>
-              <p className="text-gray-600 mb-4">contact@atrisma.com</p>
+              <GlassCard className="p-8">
+                <div className="w-12 h-12 bg-neonCyan/10 text-neonCyan rounded-full flex items-center justify-center mb-6 border border-neonCyan/20">
+                  <Mail size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Email</h3>
+                <p className="text-gray-600 dark:text-white/60 transition-colors">contact@atrisma.com</p>
+              </GlassCard>
             </motion.div>
           </div>
 
           {/* Contact Form */}
           <motion.div 
-            className="lg:col-span-2 bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100"
+            className="lg:col-span-2"
             initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h2 className="text-2xl font-heading font-bold text-primary mb-6">Send us a Message</h2>
-            
-            {submitStatus && (
-              <div className={`p-4 mb-6 rounded-lg ${submitStatus.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
-                {submitStatus.message}
-              </div>
-            )}
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Full Name</label>
-                  <Input 
-                    name="name" 
-                    value={formData.name} 
-                    onChange={handleChange} 
-                    placeholder="John Doe" 
-                    required 
-                    className="bg-gray-50 border-gray-200"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Email Address</label>
-                  <Input 
-                    type="email" 
-                    name="email" 
-                    value={formData.email} 
-                    onChange={handleChange} 
-                    placeholder="john@example.com" 
-                    required 
-                    className="bg-gray-50 border-gray-200"
-                  />
-                </div>
-              </div>
+            <GlassCard className="p-8 md:p-12 h-full">
+              <h2 className="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-8 transition-colors">Send us a <span className="text-neonCyan">Message</span></h2>
               
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Subject</label>
-                <Input 
-                  name="subject" 
-                  value={formData.subject} 
-                  onChange={handleChange} 
-                  placeholder="How can we help you?" 
-                  required 
-                  className="bg-gray-50 border-gray-200"
-                />
-              </div>
+              {submitStatus && (
+                <div className={`p-4 mb-6 rounded-lg ${submitStatus.type === 'success' ? 'bg-green-500/10 text-green-400 border border-green-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'}`}>
+                  {submitStatus.message}
+                </div>
+              )}
 
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Message</label>
-                <Textarea 
-                  name="message" 
-                  value={formData.message} 
-                  onChange={handleChange} 
-                  placeholder="Your message here..." 
-                  rows={6} 
-                  required 
-                  className="bg-gray-50 border-gray-200 resize-none"
-                />
-              </div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700 dark:text-white/70 transition-colors">Full Name</label>
+                    <Input 
+                      name="name" 
+                      value={formData.name} 
+                      onChange={handleChange} 
+                      placeholder="John Doe" 
+                      required 
+                      className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700 dark:text-white/70 transition-colors">Email Address</label>
+                    <Input 
+                      type="email" 
+                      name="email" 
+                      value={formData.email} 
+                      onChange={handleChange} 
+                      placeholder="john@example.com" 
+                      required 
+                      className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors"
+                    />
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-700 dark:text-white/70 transition-colors">Subject</label>
+                  <Input 
+                    name="subject" 
+                    value={formData.subject} 
+                    onChange={handleChange} 
+                    placeholder="How can we help you?" 
+                    required 
+                    className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors"
+                  />
+                </div>
 
-              <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
-                {isSubmitting ? 'Sending...' : (
-                  <>
-                    Send Message <Send size={18} className="ml-2" />
-                  </>
-                )}
-              </Button>
-            </form>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-700 dark:text-white/70 transition-colors">Message</label>
+                  <Textarea 
+                    name="message" 
+                    value={formData.message} 
+                    onChange={handleChange} 
+                    placeholder="Your message here..." 
+                    rows={6} 
+                    required 
+                    className="bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-neonCyan transition-colors resize-none"
+                  />
+                </div>
+
+                <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto bg-neonCyan hover:bg-white text-black font-bold px-8 py-6 text-lg transition-colors shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+                  {isSubmitting ? 'Sending...' : (
+                    <>
+                      Send Message <Send size={18} className="ml-2" />
+                    </>
+                  )}
+                </Button>
+              </form>
+            </GlassCard>
           </motion.div>
 
         </div>

@@ -1,44 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1B4F72;
-  --color-accent: #2E86C1;
-  --color-light-accent: #AED6F1;
-  --color-background-custom: #F8FAFC;
-  --color-dark: #0D1B2A;
+  --color-primary: #7C3AED;
+  --color-accent: #06B6D4;
+  --color-light-accent: #A78BFA;
+  --color-background-custom: #030014;
+  --color-dark: #000000;
   --font-heading: Outfit, sans-serif;
   --font-sans: Inter, sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 10% 4%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 204 62% 28%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
 
-    --accent: 204 62% 47%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 190 94% 43%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 204 62% 28%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 262 83% 58%;
 
     --radius: 0.5rem;
   }
@@ -49,8 +49,7 @@ html {
 }
 
 body {
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
+  @apply bg-white dark:bg-[#030014] text-gray-900 dark:text-white transition-colors duration-300;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
@@ -63,4 +62,21 @@ h1, h2, h3, h4, h5, h6 {
 
 * {
   border-color: hsl(var(--border));
+}
+
+/* Custom Utilities for Neon/Glass */
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+  }
+  
+  .glass-panel {
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .dark .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }

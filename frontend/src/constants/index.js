@@ -1,3 +1,15 @@
+export const COMPANY_LOGO = '/Company_logo.webp';
+
+export const SHOWCASE_PRODUCTS = [
+  { id: 1, name: 'IBGUT Sachet', image: '/products/ibgut.png' },
+  { id: 2, name: 'SMAFER-D Protein Powder', image: '/products/smafer-d.png' },
+  { id: 3, name: 'ATRINEC-SP Tablets', image: '/products/atrinec-sp.png' },
+  { id: 4, name: 'Tripam-Plus Tablets', image: '/products/tripam-plus.png' },
+  { id: 5, name: 'Tripam-LS Tablets', image: '/products/tripam-ls.png' },
+  { id: 6, name: 'Smadryl Syrup', image: '/products/smadryl.png' },
+  { id: 7, name: 'Smamox CV 625', image: '/products/smamox.png' },
+];
+
 export const NAV_LINKS = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
