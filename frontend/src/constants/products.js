@@ -48,6 +48,18 @@ export const PRODUCTS = [
     usage: "Take one capsule daily before or after a meal, or as prescribed."
   },
   { 
+    id: 14, 
+    name: "Vitalyca Capsules",            
+    slug: "vitalyca-capsules",
+    image: "/products/Vitalyca-Capsules.png", 
+    category: "Capsules", 
+    description: "Multivitamin and antioxidant softgel capsules for overall health and vitality support.",
+    composition: "Multivitamins, Multiminerals, and Antioxidants",
+    detailedDescription: "Vitalyca Capsules provide a comprehensive blend of essential vitamins, minerals, and antioxidants in an easy-to-swallow softgel format. Formulated to combat daily stress, boost immunity, and support cellular health, these capsules are perfect for maintaining optimal vitality and addressing nutritional deficiencies.",
+    benefits: ["Boosts daily energy levels", "Strengthens immune system", "Provides potent antioxidant protection", "Supports overall health and wellness"],
+    usage: "Take one capsule daily after a meal, or as directed by your healthcare professional."
+  },
+  { 
     id: 5, 
     name: "Smadryl Syrup",             
     slug: "smadryl-syrup",

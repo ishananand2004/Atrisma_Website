@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import PageHeader from '@/components/layout/PageHeader';
 import { TIMELINE } from '@/constants';
 import { Shield, Award, Users, Globe } from 'lucide-react';
+import FAQ from '@/components/sections/FAQ';
+import Testimonials from '@/components/sections/Testimonials';
 
 const VALUES = [
   { icon: Shield, title: 'Quality Assurance', desc: 'Uncompromising commitment to the highest quality standards.' },
@@ -84,6 +86,12 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Timeline */}
       <section className="py-24 relative overflow-hidden">

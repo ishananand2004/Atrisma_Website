@@ -23,6 +23,7 @@ const PRODUCT_SECTIONS = [
     title: 'Capsules',
     items: [
       { name: 'IBGUT Capsules', path: '/products/ibgut-capsules' },
+      { name: 'Vitalyca Capsules', path: '/products/vitalyca-capsules' },
     ],
   },
   {
