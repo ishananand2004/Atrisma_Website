@@ -94,7 +94,7 @@ export default function Contact() {
                   <Mail size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Email</h3>
-                <p className="text-gray-600 dark:text-white/60 transition-colors">contact@atrisma.com</p>
+                <p className="text-gray-600 dark:text-white/60 transition-colors">atrismapharmaceuticals@gmail.com</p>
               </div>
             </motion.div>
           </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                       name="name" 
                       value={formData.name} 
                       onChange={handleChange} 
-                      placeholder="John Doe" 
+                      placeholder="Write your name" 
                       required 
                       className="bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-[var(--color-brand-cyan)] transition-colors"
                     />
@@ -136,7 +136,7 @@ export default function Contact() {
                       name="email" 
                       value={formData.email} 
                       onChange={handleChange} 
-                      placeholder="john@example.com" 
+                      placeholder="Write your email address" 
                       required 
                       className="bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-white/30 focus:border-[var(--color-brand-cyan)] transition-colors"
                     />

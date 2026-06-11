@@ -46,17 +46,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* R&D & Innovation */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6 text-white/90">Our Focus</h3>
-            <ul className="space-y-3 text-sm text-white/50">
-              <li><Link to="/products" className="hover:text-neonPurple transition-colors">Cardiology</Link></li>
-              <li><Link to="/products" className="hover:text-neonPurple transition-colors">Neurology</Link></li>
-              <li><Link to="/products" className="hover:text-neonPurple transition-colors">Oncology</Link></li>
-              <li><Link to="/research" className="hover:text-neonPurple transition-colors">Clinical Trials</Link></li>
-              <li><Link to="/research" className="hover:text-neonPurple transition-colors">R&D Pipeline</Link></li>
-            </ul>
-          </div>
+          
 
           {/* Contact Info */}
           <div>
@@ -72,7 +62,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center group cursor-pointer">
                 <Mail className="mr-3 shrink-0 text-neonCyan group-hover:text-neonPurple transition-colors" size={18} />
-                <span className="hover:text-white transition-colors">contact@atrisma.com</span>
+                <span className="hover:text-white transition-colors">atrismapharmaceuticals@gmail.com</span>
               </li>
             </ul>
           </div>

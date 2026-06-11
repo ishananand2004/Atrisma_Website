@@ -83,6 +83,16 @@ export default function Navbar() {
     setProductsOpen(false);
   }, [location.pathname]);
 
+  /* lock body scroll when mobile drawer is open */
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
+
   /* close mega menu on outside click */
   useEffect(() => {
     const handler = (e) => {
@@ -118,7 +128,7 @@ export default function Navbar() {
         }}
         className="fixed top-0 z-[9999] w-full transition-all duration-300 border-b"
       >
-        <div className="mx-auto max-w-[1280px] px-6 md:px-10 flex items-center justify-between h-[72px]">
+        <div className="mx-auto max-w-[1280px] px-4 md:px-10 flex items-center justify-between h-14 md:h-[72px]">
           {/* Logo */}
           <Link to="/" className="flex items-center group shrink-0">
             <img
@@ -199,14 +209,14 @@ export default function Navbar() {
           </div>
 
           {/* ── Mobile Hamburger ── */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex md:hidden items-center gap-2">
             <ThemeToggle />
             <button
-              className="p-2 rounded-md text-white/70 hover:bg-white/10 transition-colors"
+              className="p-2 rounded-md text-gray-700 dark:text-white/70 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
               onClick={() => setMobileOpen((p) => !p)}
               aria-label="Toggle menu"
             >
-              {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
@@ -288,88 +298,138 @@ export default function Navbar() {
           )}
         </AnimatePresence>
 
-        {/* ═══════════════════════════════════════════
-            MOBILE MENU
-        ═══════════════════════════════════════════ */}
+      </motion.nav>
+
+      {/* ═══════════════════════════════════════════
+          MOBILE MENU (DRAWER) – rendered OUTSIDE nav
+          so it gets its own stacking context above everything
+      ═══════════════════════════════════════════ */}
+      <AnimatePresence>
         {mobileOpen && (
-          <div className="absolute top-[calc(100%+10px)] left-0 right-0 mx-auto w-full max-w-5xl glass-panel border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-8 z-50 backdrop-blur-xl bg-[#030014]/95">
-            <div className="px-6 py-6 space-y-1">
-              {NAV_ITEMS.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={clsx(
-                    'block px-4 py-3 rounded-lg text-base font-semibold transition-colors',
-                    isActive(item.path)
-                      ? 'bg-white/10 text-white'
-                      : 'text-white/60 hover:bg-white/5 hover:text-white'
-                  )}
-                >
-                  {item.label}
-                </Link>
-              ))}
+          <>
+            {/* Backdrop Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={() => setMobileOpen(false)}
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[10000]"
+            />
 
-              {/* Mobile Products Accordion */}
-              <div>
+            {/* Slide-in Drawer */}
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', damping: 28, stiffness: 220 }}
+              className="fixed top-0 right-0 h-full w-[85%] max-w-[360px] bg-[#030014] border-l border-white/10 shadow-2xl z-[10001] flex flex-col overflow-hidden"
+            >
+              {/* Drawer Header */}
+              <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 shrink-0 h-14">
+                <span className="text-base font-bold text-white tracking-widest uppercase">Menu</span>
                 <button
-                  onClick={() => setMobileProducts((p) => !p)}
-                  className="w-full flex items-center justify-between px-4 py-3 rounded-lg text-base font-semibold text-white/60 hover:bg-white/5 hover:text-white transition-colors"
+                  className="p-2 rounded-md text-white/70 hover:bg-white/10 hover:text-white transition-colors bg-white/5"
+                  onClick={() => setMobileOpen(false)}
+                  aria-label="Close menu"
                 >
-                  Products
-                  <ChevronDown
-                    size={16}
-                    className={clsx(
-                      'transition-transform duration-200',
-                      mobileProducts ? 'rotate-180' : ''
-                    )}
-                  />
+                  <X size={20} />
                 </button>
-
-                {mobileProducts && (
-                  <div className="mt-2 ml-4 border-l border-white/10 pl-4 space-y-4 pb-2">
-                    {PRODUCT_SECTIONS.map((section) => (
-                      <div key={section.title}>
-                        <h4 className="text-[11px] font-bold tracking-[0.12em] uppercase text-white/40 mb-2">
-                          {section.title}
-                        </h4>
-                        <ul className="space-y-1">
-                          {section.items.map((item) => (
-                            <li key={item.path}>
-                              <Link
-                                to={item.path}
-                                className="flex items-center justify-between px-2 py-1.5 text-sm text-white/60 hover:text-white transition-colors"
-                              >
-                                {item.name}
-                                <ArrowRight size={14} className="text-white/20" />
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-
-                    <Link
-                      to="/products"
-                      className="block mt-2 px-3 py-2 text-sm font-semibold text-neonCyan hover:text-white transition-colors"
-                    >
-                      View All Products →
-                    </Link>
-                  </div>
-                )}
               </div>
 
-              <div className="pt-6">
+              {/* Drawer Content - Scrollable */}
+              <div className="flex-1 overflow-y-auto px-5 py-6 space-y-1">
+                {NAV_ITEMS.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={clsx(
+                      'block px-4 py-3 rounded-xl text-base font-semibold transition-colors',
+                      isActive(item.path)
+                        ? 'bg-white/10 text-white'
+                        : 'text-white/60 hover:bg-white/5 hover:text-white'
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+
+                {/* Mobile Products Accordion */}
+                <div className="pt-1">
+                  <button
+                    onClick={() => setMobileProducts((p) => !p)}
+                    className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold text-white/60 hover:bg-white/5 hover:text-white transition-colors"
+                  >
+                    Products
+                    <ChevronDown
+                      size={18}
+                      className={clsx(
+                        'transition-transform duration-300',
+                        mobileProducts ? 'rotate-180' : ''
+                      )}
+                    />
+                  </button>
+
+                  <AnimatePresence>
+                    {mobileProducts && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-2 ml-4 border-l-2 border-white/10 pl-4 space-y-4 pb-3">
+                          {PRODUCT_SECTIONS.map((section) => (
+                            <div key={section.title}>
+                              <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white/40 mb-2">
+                                {section.title}
+                              </h4>
+                              <ul className="space-y-1">
+                                {section.items.map((item) => (
+                                  <li key={item.path}>
+                                    <Link
+                                      to={item.path}
+                                      onClick={() => setMobileOpen(false)}
+                                      className="flex items-center justify-between px-2 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors"
+                                    >
+                                      {item.name}
+                                      <ArrowRight size={14} className="text-white/20" />
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+
+                          <Link
+                            to="/products"
+                            onClick={() => setMobileOpen(false)}
+                            className="block mt-3 px-2 py-2 text-sm font-bold text-neonCyan hover:text-white transition-colors"
+                          >
+                            View All Products →
+                          </Link>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </div>
+
+              {/* Drawer Footer */}
+              <div className="p-5 border-t border-white/10 shrink-0 bg-[#030014]">
                 <Link
                   to="/contact"
-                  className="block w-full text-center px-6 py-3.5 text-base font-bold rounded-lg bg-gradient-to-r from-neonPurple to-neonCyan text-white shadow-[0_0_20px_rgba(124,58,237,0.3)]"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex justify-center w-full px-6 py-3.5 text-sm font-bold rounded-xl bg-gradient-to-r from-neonPurple to-neonCyan text-white shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-shadow"
                 >
                   Get in Touch
                 </Link>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </>
         )}
-      </motion.nav>
+      </AnimatePresence>
     </>
   );
 }

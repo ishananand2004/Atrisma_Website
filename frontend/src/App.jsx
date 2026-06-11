@@ -13,6 +13,7 @@ const Products = lazy(() => import('@/pages/Products'));
 const Research = lazy(() => import('@/pages/Research'));
 const GlobalPresence = lazy(() => import('@/pages/GlobalPresence'));
 const Careers = lazy(() => import('@/pages/Careers'));
+const ApplyJob = lazy(() => import('@/pages/ApplyJob'));
 const Contact = lazy(() => import('@/pages/Contact'));
 const ProductDetail = lazy(() => import('@/pages/ProductDetail'));
 
@@ -55,6 +56,7 @@ function App() {
                   <Route path="/research" element={<Research />} />
                   <Route path="/global-presence" element={<GlobalPresence />} />
                   <Route path="/careers" element={<Careers />} />
+                  <Route path="/apply-job" element={<ApplyJob />} />
                   <Route path="/contact" element={<Contact />} />
                 </Routes>
               </Suspense>

@@ -6,27 +6,27 @@ import GlassCard from '../ui/GlassCard';
 const STEPS = [
   {
     icon: Microscope,
-    title: 'Advanced Research',
-    description: 'Our state-of-the-art R&D centers pioneer breakthroughs in oncology, neurology, and complex therapeutics.',
-    color: '#7C3AED' // neonPurple
+    title: 'Advanced Formulations',
+    description: 'Developing high-quality pharmaceutical formulations including syrups, tablets, capsules, and injectables for Indian healthcare needs.',
+    color: '#7C3AED'
   },
   {
     icon: Activity,
-    title: 'Clinical Excellence',
-    description: 'Rigorous multi-phase clinical trials ensure the highest standards of safety and efficacy for every product.',
-    color: '#06B6D4' // neonCyan
+    title: 'Quality Assurance',
+    description: 'Strict quality control processes ensuring every product meets Indian regulatory standards and safety requirements.',
+    color: '#06B6D4'
   },
   {
     icon: ShieldCheck,
-    title: 'Precision Manufacturing',
-    description: 'World-class facilities adhering to global regulatory standards guarantee uncompromised quality.',
-    color: '#A78BFA' // lightAccent
+    title: 'Certified Manufacturing',
+    description: 'Manufactured in WHO-GMP certified facilities with a focus on consistency, purity, and reliability.',
+    color: '#A78BFA'
   },
   {
     icon: Globe,
-    title: 'Global Distribution',
-    description: 'A robust supply chain delivering life-saving medications to healthcare providers in over 50 countries.',
-    color: '#38BDF8' // some blue
+    title: 'Pan India Distribution',
+    description: 'Strong distribution network delivering medicines across hospitals, clinics, and pharmacies throughout India.',
+    color: '#38BDF8'
   }
 ];
 
@@ -60,7 +60,7 @@ export default function HowItWorksSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-lg text-gray-600 dark:text-white/50 max-w-2xl mx-auto transition-colors duration-300"
-          >
+            >
             How we transform scientific discoveries into accessible, life-enhancing treatments.
           </motion.p>
         </div>

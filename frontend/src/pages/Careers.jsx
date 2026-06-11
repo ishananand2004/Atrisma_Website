@@ -1,18 +1,45 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageHeader from '@/components/layout/PageHeader';
 import { getCareers } from '@/services/api';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { MapPin, Briefcase, ArrowRight } from 'lucide-react';
 import GlassCard from '@/components/ui/GlassCard';
-
+const benefits = [
+  {
+    title: "Pan India Presence 🇮🇳",
+    desc: "We have a growing distribution network across multiple states in India, ensuring timely delivery and accessibility of our pharmaceutical products.",
+    icon: "🇮🇳",
+  },
+  {
+    title: "Expanding Globally 🌍",
+    desc: "We are actively working towards expanding our presence in international markets with a focus on quality, compliance, and innovation.",
+    icon: "🌍",
+  },
+  {
+    title: "Trusted Quality 🏥",
+    desc: "Our products are manufactured under strict quality standards to ensure safety, effectiveness, and trust among healthcare professionals.",
+    icon: "🏥",
+  },
+];
 export default function Careers() {
   const [jobs, setJobs] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getCareers().then(setJobs);
   }, []);
+
+  const handleApply = (job) => {
+    navigate('/apply-job', {
+      state: {
+        job: {
+          title: job.title,
+          location: job.location,
+          type: job.type,
+        },
+      },
+    });
+  };
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-[#030014]">
@@ -31,25 +58,41 @@ export default function Careers() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-20">
-            {['Continuous Learning', 'Global Exposure', 'Health & Wellness'].map((benefit, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="h-full"
-              >
-                <GlassCard hoverEffect={true} className="p-8 text-center h-full">
-                  <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 text-neonCyan font-bold border border-white/10">
-                    {i + 1}
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{benefit}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">We provide the resources, support, and opportunities needed to advance your career.</p>
-                </GlassCard>
-              </motion.div>
-            ))}
-          </div>
+  {benefits.map((item, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: i * 0.15 }}
+      whileHover={{ y: -8 }}
+      className="h-full"
+    >
+      <GlassCard
+        hoverEffect={true}
+        className="p-8 text-center h-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.1)]"
+      >
+        {/* Icon */}
+        <div className="w-14 h-14 bg-gradient-to-br from-cyan-400/20 to-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl border border-white/10">
+          {item.icon}
+        </div>
+
+        {/* Title */}
+        <h3 className="text-xl font-semibold text-white mb-3">
+          {item.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-white/60 text-sm leading-relaxed">
+          {item.desc}
+        </p>
+
+        {/* Bottom Glow Line */}
+        <div className="mt-6 h-[2px] w-0 bg-cyan-400 transition-all duration-300 group-hover:w-full mx-auto"></div>
+      </GlassCard>
+    </motion.div>
+  ))}
+</div>
         </div>
       </section>
 
@@ -61,39 +104,51 @@ export default function Careers() {
             <p className="text-white/50">Find your next role at Atrisma Pharmaceuticals.</p>
           </div>
 
-          <div className="space-y-6">
-            {jobs.map((job, idx) => (
-              <motion.div
-                key={job.id}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.1 }}
-              >
-                <GlassCard hoverEffect={true} className="border-l-4 border-l-neonCyan group">
-                  <div className="p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-neonCyan transition-colors">{job.title}</h3>
-                      <div className="flex flex-wrap gap-4 text-sm text-white/60">
-                        <span className="flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10"><Briefcase size={14} className="mr-2 text-neonPurple" /> {job.department}</span>
-                        <span className="flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10"><MapPin size={14} className="mr-2 text-neonCyan" /> {job.location}</span>
-                        <Badge variant="secondary" className="bg-neonCyan/10 text-neonCyan border-none hover:bg-neonCyan/20">{job.type}</Badge>
-                      </div>
-                    </div>
-                    <Button className="bg-white/10 hover:bg-white text-white hover:text-black shrink-0 border border-white/20 transition-all shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                      Apply Now <ArrowRight size={16} className="ml-2" />
-                    </Button>
-                  </div>
-                </GlassCard>
-              </motion.div>
-            ))}
-            
-            {jobs.length === 0 && (
-              <div className="text-center py-16 text-white/40 glass-panel rounded-2xl">
-                No open positions currently available. Please check back later.
-              </div>
-            )}
+          <div className="max-w-5xl mx-auto space-y-6">
+  {jobs.map((job, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: i * 0.1 }}
+      viewport={{ once: true }}
+      className="group"
+    >
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_0_20px_rgba(0,255,255,0.08)]">
+
+        {/* Left Side */}
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-2">
+            {job.title}
+          </h3>
+
+          <div className="flex flex-wrap gap-3 text-sm text-white/60">
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              {job.department}
+            </span>
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              📍 {job.location}
+            </span>
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              {job.type}
+            </span>
           </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="mt-4 md:mt-0">
+          <button
+            type="button"
+            onClick={() => handleApply(job)}
+            className="px-5 py-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            Apply Now →
+          </button>
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</div>
         </div>
       </section>
     </div>

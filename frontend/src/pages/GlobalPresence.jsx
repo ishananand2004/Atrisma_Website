@@ -76,7 +76,7 @@ export default function GlobalPresence() {
                     </p>
                     <p className="flex items-center hover:text-white transition-colors cursor-pointer">
                       <Mail size={16} className="mr-2 text-white/40" />
-                      contact@atrisma.com
+                      atrismapharmaceuticals@gmail.com
                     </p>
                   </div>
                 </GlassCard>

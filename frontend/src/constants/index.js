@@ -35,8 +35,5 @@ export const TIMELINE = [
 ];
 
 export const OFFICE_LOCATIONS = [
-  { city: 'Mumbai, India', address: 'Atrisma House, Goregaon East, Mumbai 400063', phone: '+91 22 1234 5678' },
-  { city: 'New Jersey, USA', address: '100 Atrisma Blvd, Princeton, NJ 08540', phone: '+1 609 555 0100' },
-  { city: 'London, UK', address: '45 Pharma Street, London W1W 8AA', phone: '+44 20 7946 0958' },
-  { city: 'Dubai, UAE', address: 'Healthcare City, Building 12, Dubai', phone: '+971 4 123 4567' },
+  { city: 'Mumbai, India', address: 'Flat no.501, Tower-B14, Supertech Eco Village 1, Sector 1, Noida Extension Pin-201306', phone: '+91 93047 95303' },
 ];

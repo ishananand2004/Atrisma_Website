@@ -36,7 +36,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-screen min-h-[700px] overflow-hidden bg-[#030014] flex items-center">
+    <section className="relative w-full min-h-screen overflow-hidden bg-[#030014] flex items-center pt-14 md:pt-[72px]">
       {/* Background Mesh and Particles */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-1/4 w-[800px] h-[800px] bg-neonPurple/20 rounded-full mix-blend-screen filter blur-[150px] opacity-70 animate-pulse" />
@@ -44,7 +44,7 @@ export default function HeroSection() {
         <ParticleBackground />
       </div>
 
-      <div className="container mx-auto px-6 md:px-10 relative z-10">
+      <div className="container mx-auto px-5 sm:px-8 md:px-10 relative z-10 w-full">
         <div className="max-w-4xl mx-auto text-center relative">
           
           {/* Dark radial overlay for text contrast */}
@@ -68,7 +68,7 @@ export default function HeroSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
           >
             {words.map((word, index) => (
               <motion.span variants={child} style={{ marginRight: "0.25em" }} key={index}>
@@ -87,7 +87,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="text-lg md:text-xl text-white/60 mb-12 max-w-2xl mx-auto font-light leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-white/60 mb-10 sm:mb-12 max-w-2xl mx-auto font-light leading-relaxed"
           >
             Atrisma Pharmaceuticals is dedicated to developing innovative solutions that improve patient outcomes worldwide across critical therapeutic areas.
           </motion.p>
@@ -97,7 +97,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 sm:gap-6 px-4 sm:px-0"
           >
             <Link
               to="/products"

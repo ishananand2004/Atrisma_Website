@@ -19,8 +19,6 @@ export default function Home() {
       
       <ProductGrid />
 
-      <StatsSection />
-
       <CTASection 
         title="Ready to Transform Healthcare?"
         description="Partner with us to expand access to high-quality, innovative therapies in your region."

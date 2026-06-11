@@ -18,7 +18,8 @@ export default function ProductGrid() {
               viewport={{ once: true }}
               className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
             >
-              Discover Our Portfolio
+              {/* Discover Our Portfolio */}
+              Our Products
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
