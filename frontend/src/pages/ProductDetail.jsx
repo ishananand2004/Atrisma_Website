@@ -18,15 +18,15 @@ export default function ProductDetail() {
   ).slice(0, 3);
 
   return (
-    <div className="w-full pt-[72px] bg-white dark:bg-[#030014] text-gray-900 dark:text-white transition-colors duration-300">
+    <div className="w-full pt-14 md:pt-[72px] min-h-fit bg-white dark:bg-[#030014] text-gray-900 dark:text-white transition-colors duration-300">
       <Helmet>
         <title>{product.name} | Atrisma Pharmaceuticals</title>
         <meta name="description" content={product.description} />
       </Helmet>
 
       {/* Header with back button */}
-      <div className="border-b border-gray-200 dark:border-white/5 bg-white/90 dark:bg-[#030014]/80 backdrop-blur-md sticky top-[72px] z-40 transition-colors">
-        <div className="max-w-[1200px] mx-auto px-5 py-4">
+      <div className="border-b border-gray-200 dark:border-white/5 bg-white/90 dark:bg-[#030014]/80 backdrop-blur-md sticky top-14 md:top-[72px] z-40 transition-colors mt-2 md:mt-6">
+        <div className="max-w-[1200px] mx-auto px-5 py-3 md:py-4">
           <Link 
             to="/products"
             className="inline-flex items-center text-sm font-medium text-gray-500 dark:text-white/60 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -37,7 +37,7 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-5 py-10">
+      <div className="max-w-[1200px] mx-auto px-5 pt-4 sm:pt-6 md:pt-12 pb-10 md:pb-10">
         {/* Top Section: 2 Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
           
@@ -46,7 +46,7 @@ export default function ProductDetail() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl overflow-hidden glass-panel p-6 shadow-sm dark:shadow-[0_0_50px_rgba(124,58,237,0.1)] lg:sticky top-32"
+            className="relative rounded-3xl overflow-hidden glass-panel p-4 md:p-6 shadow-sm dark:shadow-[0_0_50px_rgba(124,58,237,0.1)] lg:sticky lg:top-32"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-brand-purple)]/10 dark:bg-neonPurple/20 rounded-full blur-[80px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-[var(--color-brand-cyan)]/10 dark:bg-neonCyan/20 rounded-full blur-[80px] pointer-events-none" />

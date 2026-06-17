@@ -166,5 +166,17 @@ export const PRODUCTS = [
     detailedDescription: "Vitalyca Suspension is a comprehensive daily tonic designed to bridge nutritional gaps, boost immunity, and promote overall vitality. Enriched with essential vitamins, minerals, and L-Lysine to enhance appetite, it is ideal for individuals recovering from illness, growing children, and those experiencing general weakness.",
     benefits: ["Boosts energy and reduces fatigue", "Strengthens immune defense", "Promotes healthy growth and development", "Contains antioxidants to fight cellular stress"],
     usage: "Adults: 10ml twice daily. Children: 5ml once or twice daily, or as directed by the physician."
+  },
+  { 
+    id: 15, 
+    name: "Smapan-DSR Capsules",      
+    slug: "smapan-dsr",
+    image: "/products/Smapan_DSR.png", 
+    category: "Capsules", 
+    description: "Pantoprazole and Domperidone capsules for effective treatment of acidity, GERD, and gastric disorders.",
+    composition: "Pantoprazole Sodium 40mg + Domperidone 30mg SR",
+    detailedDescription: "Smapan-DSR Capsules combine the proton pump inhibitor Pantoprazole with the prokinetic agent Domperidone in a sustained-release form. This combination provides rapid and prolonged relief from acid reflux, heartburn, and other symptoms associated with Gastroesophageal Reflux Disease (GERD) and peptic ulcers.",
+    benefits: ["Effective treatment for GERD and acid reflux", "Provides sustained relief from heartburn", "Helps heal erosive esophagitis", "Reduces gastric discomfort and nausea"],
+    usage: "Take one capsule daily, preferably 30 minutes before breakfast, or as directed by your physician. Swallow whole."
   }
 ];

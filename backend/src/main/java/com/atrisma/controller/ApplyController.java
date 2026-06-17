@@ -1,7 +1,6 @@
 package com.atrisma.controller;
 
-import com.atrisma.dto.ContactRequestDTO;
-import com.atrisma.service.ContactService;
+import com.atrisma.dto.ApplyRequestDTO;
 import com.atrisma.service.EmailService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -17,31 +16,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/contact")
+@RequestMapping("/api/apply")
 @RequiredArgsConstructor
 @Slf4j
-public class ContactController {
+public class ApplyController {
 
-    private final ContactService contactService;
     private final EmailService emailService;
 
     @PostMapping
-    public ResponseEntity<Map<String, Object>> submitContact(@Valid @RequestBody ContactRequestDTO dto) {
+    public ResponseEntity<Map<String, Object>> submitApplication(@Valid @RequestBody ApplyRequestDTO dto) {
         Map<String, Object> response = new HashMap<>();
         try {
-            // Save to DB (optional but good to keep if existing)
-            contactService.saveContactMessage(dto);
-            
             // Send email
-            emailService.sendContactEmail(dto);
+            emailService.sendApplyEmail(dto);
             
             response.put("success", true);
-            response.put("message", "Message sent successfully");
+            response.put("message", "Application submitted successfully");
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {
-            log.error("Error processing contact submission", e);
+            log.error("Error processing job application", e);
             response.put("success", false);
-            response.put("message", "Failed to send message");
+            response.put("message", "Failed to submit application");
             return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

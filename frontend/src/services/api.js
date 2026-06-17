@@ -1,12 +1,26 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+// When the frontend is opened on a different device (e.g. 192.168.29.135:5173),
+// "localhost" would point to THAT device, not the Mac running the backend.
+// So we derive the backend URL from the current browser's hostname automatically.
+const getBaseUrl = () => {
+  // If an explicit env variable is set (e.g. in .env), always use that
+  if (import.meta.env.VITE_API_BASE_URL) {
+    return import.meta.env.VITE_API_BASE_URL;
+  }
+  // Otherwise derive from where the frontend is being served from
+  const hostname = window.location.hostname;
+  return `http://${hostname}:8000/api`;
+};
+
+const API_BASE_URL = getBaseUrl();
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 15000, // 15-second timeout
 });
 
 export const getProducts = async () => {
@@ -34,10 +48,11 @@ export const getCareers = async () => {
     
     // Returning mock data for now
     return [
-      { id: 1, title: 'Senior Research Scientist', department: 'R&D', location: 'Mumbai, India', type: 'Full-time' },
-      { id: 2, title: 'Clinical Trial Manager', department: 'Clinical Affairs', location: 'London, UK', type: 'Full-time' },
-      { id: 3, title: 'Quality Assurance Lead', department: 'Quality', location: 'New Jersey, USA', type: 'Full-time' },
-      { id: 4, title: 'Medical Representative', department: 'Sales', location: 'Dubai, UAE', type: 'Full-time' },
+      { id: 1, title: 'Research Scientist', department: 'R&D', location: 'India', type: 'Full-time' },
+      { id: 2, title: 'Clinical Trial Manager', department: 'Clinical Affairs', location: 'India', type: 'Full-time' },
+      { id: 3, title: 'Sales Manager', department: 'Sales', location: 'India', type: 'Full-time' },
+      { id: 4, title: 'Area Bussiness Manager', department: 'Sales', location: 'India', type: 'Full-time' },
+      { id: 5, title: 'Territory Manager', department: 'Sales', location: 'India', type: 'Full-time' },
     ];
   } catch (error) {
     console.error('Error fetching careers', error);
@@ -47,13 +62,20 @@ export const getCareers = async () => {
 
 export const submitContact = async (data) => {
   try {
-    // const response = await api.post('/contact', data);
-    // return response.data;
-    
-    console.log('Contact form submitted:', data);
-    return { success: true, message: 'Message sent successfully' };
+    const response = await api.post('/contact', data);
+    return response.data;
   } catch (error) {
-    console.error('Error submitting contact', error);
+    console.error('Error submitting contact form:', error.response?.data || error.message);
+    throw error;
+  }
+};
+
+export const submitApplication = async (data) => {
+  try {
+    const response = await api.post('/apply', data);
+    return response.data;
+  } catch (error) {
+    console.error('Error submitting job application:', error.response?.data || error.message);
     throw error;
   }
 };

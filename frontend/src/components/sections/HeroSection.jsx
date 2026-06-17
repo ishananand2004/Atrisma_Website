@@ -36,7 +36,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-[#030014] flex items-center pt-14 md:pt-[72px]">
+    <section className="relative w-full min-h-screen overflow-hidden bg-[#030014] flex items-start md:items-center pt-14 md:pt-[72px]">
       {/* Background Mesh and Particles */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-1/4 w-[800px] h-[800px] bg-neonPurple/20 rounded-full mix-blend-screen filter blur-[150px] opacity-70 animate-pulse" />
@@ -44,7 +44,7 @@ export default function HeroSection() {
         <ParticleBackground />
       </div>
 
-      <div className="container mx-auto px-5 sm:px-8 md:px-10 relative z-10 w-full">
+      <div className="container mx-auto px-5 sm:px-8 md:px-10 relative z-10 w-full py-12 md:py-0">
         <div className="max-w-4xl mx-auto text-center relative">
           
           {/* Dark radial overlay for text contrast */}

@@ -1,9 +1,11 @@
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/AtrismaApplication.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/CorsConfig.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+/Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/CareerController.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ContactController.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ProductController.java
+/Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/dto/ApplyRequestDTO.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/dto/ContactRequestDTO.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/exception/GlobalExceptionHandler.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/exception/ResourceNotFoundException.java
@@ -15,4 +17,5 @@
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/repository/ProductRepository.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/CareerService.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/ContactService.java
+/Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java
 /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/ProductService.java

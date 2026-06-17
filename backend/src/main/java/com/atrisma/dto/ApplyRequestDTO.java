@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-public class ContactRequestDTO {
+public class ApplyRequestDTO {
 
     @NotBlank(message = "Name is required")
     private String name;
@@ -14,8 +14,11 @@ public class ContactRequestDTO {
     @Email(message = "Invalid email format")
     private String email;
 
-    @NotBlank(message = "Subject is required")
-    private String subject;
+    @NotBlank(message = "Phone is required")
+    private String phone;
+
+    @NotBlank(message = "Role is required")
+    private String role;
 
     @NotBlank(message = "Message is required")
     private String message;

@@ -14,10 +14,13 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173")
+                        // Allow all origins so the app works on localhost AND on 192.168.x.x (local network)
+                        .allowedOriginPatterns("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(true);
+                        // Note: allowCredentials cannot be true when allowedOriginPatterns is "*"
+                        // unless you list origins explicitly. Set to false for open APIs.
+                        .allowCredentials(false);
             }
         };
     }

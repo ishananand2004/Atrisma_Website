@@ -10,7 +10,7 @@ const VALUES = [
   { icon: Shield, title: 'Quality Assurance', desc: 'Uncompromising commitment to the highest quality standards.' },
   { icon: Award, title: 'Innovation', desc: 'Pioneering new therapeutic solutions through cutting-edge R&D.' },
   { icon: Users, title: 'Patient-Centric', desc: 'Putting patient well-being at the heart of everything we do.' },
-  { icon: Globe, title: 'Global Reach', desc: 'Ensuring accessible healthcare across diverse geographies.' },
+  { icon: Globe, title: 'Global Reach', desc: 'Ensuring accessible healthcare across diverse geographies in future.' },
 ];
 
 export default function About() {

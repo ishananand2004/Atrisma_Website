@@ -20,3 +20,138 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.lang.Thread.run(Thread.java:1474)
 
 2026.06.06 11:39:14 INFO  Exiting server
+2026.06.11 20:34:08 INFO  Started: Metals version 1.6.7 in folders '/Users/ishananand/Client_Project' for client Visual Studio Code 1.93.1.
+2026.06.11 20:34:08 INFO  Memory monitor started
+2026.06.11 20:34:08 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.06.11 20:34:08 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:13 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:13 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:13 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:13 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:14 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:14 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:14 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:18 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:21 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:21 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:22 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:22 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:22 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:22 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:23 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:24 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:24 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:24 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:24 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:26 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:26 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:26 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:26 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:26 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:27 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:30 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:31 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:32 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:32 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:33 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:33 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:35 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:35 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:45 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:45 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:45 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:45 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:46 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:46 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:47 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:46 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:46 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:47 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:47 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:47 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:47 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:47 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:49 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:49 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:49 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:49 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:49 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:50 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:50 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:51 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:56 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:56 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:56 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:56 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:57 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:57 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:58 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:34:58 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:58 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:34:58 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:03 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java
+2026.06.11 20:35:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:17 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:17 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:30 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 20:35:36 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/config/DataSeeder.java. Using fallback presentation compiler.
+2026.06.11 21:41:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/AtrismaApplication.java. Using fallback presentation compiler.
+Jun 11, 2026 9:43:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.06.11 22:03:10 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/AtrismaApplication.java. Using fallback presentation compiler.
+2026.06.11 22:03:10 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.06.11 22:03:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.06.11 22:03:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.06.11 22:05:10 INFO  Shutting down server
+2026.06.11 22:05:10 INFO  Memory monitor stopped
+2026.06.11 22:05:10 INFO  shutting down Metals
+2026.06.11 22:05:10 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:214)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.06.11 22:05:10 INFO  Exiting server
+2026.06.17 07:13:30 INFO  Started: Metals version 1.6.7 in folders '/Users/ishananand/Client_Project' for client Visual Studio Code 1.93.1.
+2026.06.17 07:13:30 INFO  Memory monitor started
+2026.06.17 07:13:31 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+Jun 17, 2026 7:15:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

@@ -24,11 +24,16 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitStatus(null);
     try {
-      await submitContact(formData);
-      setSubmitStatus({ type: 'success', message: 'Message sent successfully. We will get back to you soon.' });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      const response = await submitContact(formData);
+      if (response && response.success) {
+        setSubmitStatus({ type: 'success', message: response.message || 'Message sent successfully. We will get back to you soon.' });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmitStatus({ type: 'error', message: response?.message || 'Failed to send message. Please try again.' });
+      }
     } catch (error) {
-      setSubmitStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+      const errorMsg = error.response?.data?.message || 'Failed to send message. Please try again.';
+      setSubmitStatus({ type: 'error', message: errorMsg });
     } finally {
       setIsSubmitting(false);
     }
@@ -48,7 +53,7 @@ export default function Contact() {
         subtitle="We're here to answer any questions you may have about our products, partnerships, or careers."
       />
 
-      <div className="container mx-auto px-6 md:px-10 py-24">
+      <div className="container mx-auto px-6 md:px-10 py-10 md:py-24">
         <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           
           {/* Contact Info Cards */}
@@ -75,11 +80,15 @@ export default function Contact() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <div className="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-[var(--color-brand-purple)]/10 text-[var(--color-brand-purple)] rounded-full flex items-center justify-center mb-6 border border-[var(--color-brand-purple)]/20">
-                  <Phone size={24} />
+                <div className="w-12 h-12 bg-[var(--color-brand-cyan)]/10 text-[var(--color-brand-cyan)] rounded-full flex items-center justify-center mb-6 border border-[var(--color-brand-cyan)]/20">
+                  <MapPin size={24} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Phone</h3>
-                <p className="text-gray-600 dark:text-white/60 transition-colors">{headOffice.phone}</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors">Regional Office</h3>
+                <p className="text-gray-600 dark:text-white/60 transition-colors leading-relaxed">
+                  Atrisma Pharmaceuticals Private Limited,<br />
+                  Badh Chowk near Hanuman Mandir Bela,<br />
+                  Muzaffarpur
+                </p>
               </div>
             </motion.div>
 

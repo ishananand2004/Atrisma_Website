@@ -10,20 +10,17 @@ const faqs = [
   },
   {
     question: "Are your medicines approved and safe?",
-    answer: "Yes, all our medicines are manufactured in WHO-GMP certified facilities and undergo stringent quality control checks to ensure they meet the highest standards of safety and efficacy."
+    answer: "Yes, All our medicines are manufactured in WHO-GMP certified facilities and undergo stringent quality control checks to ensure they meet the highest standards of safety and efficacy."
   },
   {
     question: "Do you operate only in India?",
-    answer: "While we have a strong presence in India, we are rapidly expanding our global footprint and currently export to several countries worldwide."
+    answer: "Yes, we currently operate within India, serving healthcare providers, pharmacies, and distributors across the country."
   },
   {
     question: "How can I contact your team?",
     answer: "You can reach us through our Contact page, email us directly, or call our customer support lines. Our dedicated team is always ready to assist you."
   },
-  {
-    question: "Do you provide third-party manufacturing?",
-    answer: "Yes, we offer comprehensive third-party manufacturing services with state-of-the-art facilities for various dosage forms."
-  },
+  
   {
     question: "How do you ensure quality?",
     answer: "Quality is embedded in our processes. We follow strict Good Manufacturing Practices (GMP), utilize advanced testing equipment, and have a dedicated quality assurance team at every step."

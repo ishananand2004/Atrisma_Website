@@ -3,17 +3,17 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Dr. Rajesh Sharma",
-    role: "Senior Physician",
+    name: "Dr. Avinash Kumar",
+    role: "Surgeon",
     comment: "High-quality medicines with consistent results. Highly reliable brand that I confidently prescribe to my patients."
   },
   {
-    name: "Anita Desai",
-    role: "Pharmaceutical Distributor",
+    name: "Maa Sushila Pharma",
+    role: "Pharmaceuticals Distributor",
     comment: "Excellent support, transparent dealings, and timely delivery. Partnering with Atrisma has significantly grown our business."
   },
   {
-    name: "Dr. Meera Reddy",
+    name: "Dr. Brajesh Kumar",
     role: "Pediatrician",
     comment: "Their pediatric range is exceptional. The formulations are effective, safe, and very well tolerated by children."
   }

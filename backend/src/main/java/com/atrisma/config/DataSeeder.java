@@ -32,7 +32,7 @@ public class DataSeeder implements CommandLineRunner {
                 new Career(null, "Senior Research Scientist", "Mumbai, India", "Lead research initiatives in our main R&D center.", "Ph.D. in related field, 5+ years experience"),
                 new Career(null, "Clinical Trial Manager", "London, UK", "Manage global clinical trials for new therapeutics.", "BSc/MSc in Life Sciences, 3+ years clinical management"),
                 new Career(null, "Quality Assurance Lead", "New Jersey, USA", "Ensure all products meet FDA and global standards.", "BS in Science, 5+ years QA experience in Pharma"),
-                new Career(null, "Medical Representative", "Dubai, UAE", "Drive sales and build relationships with healthcare professionals.", "Excellent communication, prior pharma sales experience")
+                new Career(null, "Territory Manager", "India", "Drive sales and build relationships with healthcare professionals.", "Excellent communication, prior pharma sales experience")
             ));
         }
     }

@@ -3,6 +3,7 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Briefcase, MapPin, CheckCircle2 } from 'lucide-react';
+import { submitApplication } from '@/services/api';
 import PageHeader from '@/components/layout/PageHeader';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -86,26 +87,27 @@ export default function ApplyJob() {
 
     setIsSubmitting(true);
 
-    const payload = {
-      fullName: formData.fullName.trim(),
-      email: formData.email.trim(),
-      phone: formData.phone.trim(),
-      resume: formData.resume?.name ?? null,
-      coverLetter: formData.coverLetter.trim(),
-      jobTitle: job.title,
-      jobLocation: job.location,
-      jobType: job.type,
-    };
+    try {
+      const response = await submitApplication({
+        name: formData.fullName.trim(),
+        email: formData.email.trim(),
+        phone: formData.phone.trim(),
+        role: job.title,
+        message: formData.coverLetter.trim()
+      });
 
-    // TODO: integrate backend/email service later
-    console.log(payload);
-
-    await new Promise((resolve) => setTimeout(resolve, 800));
-
-    setIsSuccess(true);
-    setFormData(initialFormState);
-    setErrors({});
-    setIsSubmitting(false);
+      if (response && response.success) {
+        setIsSuccess(true);
+        setFormData(initialFormState);
+        setErrors({});
+      } else {
+        setErrors({ submit: response?.message || 'Failed to submit application. Please try again.' });
+      }
+    } catch (error) {
+      setErrors({ submit: error.response?.data?.message || 'Failed to submit application. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!job) return null;
@@ -121,11 +123,11 @@ export default function ApplyJob() {
         subtitle="Complete the form below to apply for this position."
       />
 
-      <section className="flex-1 py-12 md:py-16 overflow-y-auto">
+      <section className="flex-1 py-6 md:py-16 overflow-y-auto">
         <div className="container mx-auto px-4 sm:px-6 md:px-10 max-w-2xl">
           <Link
             to="/careers#jobs"
-            className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-neonCyan transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-neonCyan transition-colors mb-6 md:mb-8"
           >
             <ArrowLeft size={16} />
             Back to Careers
@@ -181,6 +183,12 @@ export default function ApplyJob() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+                {errors.submit && (
+                  <div className="p-4 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 text-sm">
+                    {errors.submit}
+                  </div>
+                )}
+                
                 {/* Job Title (read-only) */}
                 <div>
                   <label htmlFor="jobTitle" className="block text-sm font-medium text-white/80 mb-2">
