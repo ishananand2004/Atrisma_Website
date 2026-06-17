@@ -1,17 +1,18 @@
-import { useCallback } from "react";
+import { ParticlesProvider } from "@tsparticles/react";
 import Particles from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
-export default function ParticleBackground() {
-  const particlesInit = useCallback(async engine => {
-    await loadFull(engine);
-  }, []);
+// Stable initialization callback defined outside the component lifecycle
+const initParticles = async (engine) => {
+  await loadFull(engine);
+};
 
+export default function ParticleBackground() {
   return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      className="absolute inset-0 pointer-events-none z-0"
+    <ParticlesProvider init={initParticles}>
+      <Particles
+        id="tsparticles"
+        className="absolute inset-0 pointer-events-none z-0"
       options={{
         fullScreen: { enable: false },
         background: {
@@ -58,5 +59,6 @@ export default function ParticleBackground() {
         detectRetina: true,
       }}
     />
+    </ParticlesProvider>
   );
 }
