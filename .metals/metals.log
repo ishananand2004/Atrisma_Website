@@ -155,3 +155,222 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.06.17 07:13:31 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
 Jun 17, 2026 7:15:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2026.07.13 08:11:24 INFO  Started: Metals version 1.6.7 in folders '/Users/ishananand/Client_Project' for client Visual Studio Code 1.93.1.
+2026.07.13 08:11:24 INFO  Memory monitor started
+2026.07.13 08:11:29 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.07.13 08:11:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 09:57:30 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+Jul 13, 2026 9:57:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+2026.07.13 09:57:30 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+Jul 13, 2026 9:57:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+2026.07.13 09:57:30 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 19:58:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+Jul 13, 2026 7:58:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2026.07.13 19:58:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 19:58:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 20:32:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 20:32:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 22:59:43 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 22:59:43 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 22:59:43 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:57 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:15:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:02 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:02 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:02 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:02 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:05 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:05 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:07 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:07 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:08 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:10 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:10 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:14 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:15 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:15 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:15 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:15 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:32 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:36 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:16:36 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:23:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:23:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:23:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:23:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:23:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:00 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:01 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:03 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:06 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:06 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:11 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:14 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:14 INFO  Created report: Optional[file:///Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java]
+2026.07.13 23:24:14 INFO  empty definition using pc, found symbol in pc: _empty_/log# (full report at: "/Users/ishananand/Client_Project/.metals/.reports/metals-full/2026-07-13/r_empty-definition_23-24-14-064.md")
+2026.07.13 23:24:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:16 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:24:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:06 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:07 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java
+Jul 13, 2026 11:46:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 90
+2026.07.13 23:46:06 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:07 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:07 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:07 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:12 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:35 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:35 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:54 INFO  Created report: Optional[file:///Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java]
+2026.07.13 23:46:54 INFO  empty definition using pc, found symbol in pc: _empty_/EmailService#sendApplyEmail# (full report at: "/Users/ishananand/Client_Project/.metals/.reports/metals-full/2026-07-13/r_empty-definition_23-46-54-740.md")
+2026.07.13 23:46:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:46:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:56 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:56 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:57 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:57 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+Jul 13, 2026 11:46:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 126
+2026.07.13 23:46:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:46:59 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:47:03 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/AtrismaApplication.java. Using fallback presentation compiler.
+2026.07.13 23:47:05 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/AtrismaApplication.java. Using fallback presentation compiler.
+2026.07.13 23:47:05 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+Jul 13, 2026 11:47:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 136
+2026.07.13 23:47:08 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:08 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+Jul 13, 2026 11:47:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 140
+2026.07.13 23:47:17 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:17 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:17 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:19 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:25 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:25 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:25 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:27 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:47:28 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java
+2026.07.13 23:47:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:47:28 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:47:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+Jul 13, 2026 11:47:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 162
+2026.07.13 23:47:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+Jul 13, 2026 11:47:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 159
+2026.07.13 23:47:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:47:29 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/controller/ApplyController.java. Using fallback presentation compiler.
+2026.07.13 23:47:31 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:31 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:32 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java
+2026.07.13 23:47:31 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:33 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+Jul 13, 2026 11:47:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 173
+2026.07.13 23:47:33 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+Jul 13, 2026 11:47:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 174
+Jul 13, 2026 11:47:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 169
+2026.07.13 23:47:33 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:34 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:53 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:47:58 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:48:38 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+Jul 13, 2026 11:49:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 196
+2026.07.13 23:49:37 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:37 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:37 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:37 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:39 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:39 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:41 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:42 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:42 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:44 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:56 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:49:58 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:50:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:50:09 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java
+2026.07.13 23:50:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:50:09 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:51 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:52 WARN  no build target for: /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java
+2026.07.13 23:55:51 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+Jul 13, 2026 11:55:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 227
+2026.07.13 23:55:52 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:54 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:55 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.13 23:55:57 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.14 00:22:25 INFO  no build target found for /Users/ishananand/Client_Project/backend/src/main/java/com/atrisma/service/EmailService.java. Using fallback presentation compiler.
+2026.07.14 08:45:18 INFO  Shutting down server
+2026.07.14 08:45:18 INFO  Memory monitor stopped
+2026.07.14 08:45:18 INFO  shutting down Metals
+2026.07.14 08:45:18 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:214)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.07.14 08:45:18 INFO  Exiting server

@@ -1,0 +1,19 @@
+const { Sequelize } = require('sequelize');
+require('dotenv').config();
+
+const sequelize = new Sequelize(
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
+  {
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    dialect: 'mysql',
+    logging: false, // Set to console.log to match Spring Boot's spring.jpa.show-sql=true if desired
+    define: {
+      timestamps: false // Spring Boot entities did not have creation/update timestamps by default unless specified
+    }
+  }
+);
+
+module.exports = sequelize;
