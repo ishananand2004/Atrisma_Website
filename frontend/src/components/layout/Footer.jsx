@@ -69,7 +69,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4 text-xs text-white/40">
           <p>&copy; {new Date().getFullYear()} Atrisma Pharmaceuticals Pvt. Ltd. All rights reserved.</p>
           <div className="flex space-x-6">
-            <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="#" className="hover:text-white transition-colors">Terms of Use</Link>
             <Link to="#" className="hover:text-white transition-colors">Sitemap</Link>
           </div>

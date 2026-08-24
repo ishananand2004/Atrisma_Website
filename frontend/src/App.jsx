@@ -16,6 +16,7 @@ const Careers = lazy(() => import('@/pages/Careers'));
 const ApplyJob = lazy(() => import('@/pages/ApplyJob'));
 const Contact = lazy(() => import('@/pages/Contact'));
 const ProductDetail = lazy(() => import('@/pages/ProductDetail'));
+const PrivacyPolicy = lazy(() => import('@/pages/PrivacyPolicy'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -58,6 +59,7 @@ function App() {
                   <Route path="/careers" element={<Careers />} />
                   <Route path="/apply-job" element={<ApplyJob />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 </Routes>
               </Suspense>
             </Layout>
