@@ -6,14 +6,14 @@ const app = express();
 
 // Middleware mimicking Spring Boot CorsConfig
 const corsOptions = {
-  origin: ["https://atrisma-website-8nfi.vercel.app"],
+  origin: ["https://atrisma-website-918y.vercel.app"],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With'],
   credentials: false
 };
 
 // Preflight must be registered before cors() and helmet()
-app.options('*', cors(corsOptions));
+app.options('/{*path}', cors(corsOptions));
 app.use(cors(corsOptions));
 
 // Helmet's crossOriginResourcePolicy defaults to 'same-origin' which blocks
