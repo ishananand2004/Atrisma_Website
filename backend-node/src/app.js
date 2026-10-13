@@ -22,6 +22,40 @@ app.use(helmet({ crossOriginResourcePolicy: false }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// --- Lazy DB init for Vercel serverless ---
+const db = require('./models');
+const seedData = require('./utils/seeder');
+
+let dbReady = false;
+let dbInitPromise = null;
+
+function ensureDbReady() {
+  if (dbReady) return Promise.resolve();
+  if (!dbInitPromise) {
+    dbInitPromise = db.sequelize.sync({ alter: true })
+      .then(async () => {
+        console.log('Database synchronized.');
+        await seedData();
+        dbReady = true;
+      })
+      .catch((err) => {
+        dbInitPromise = null; // Allow retry on next request
+        throw err;
+      });
+  }
+  return dbInitPromise;
+}
+
+app.use(async (req, res, next) => {
+  try {
+    await ensureDbReady();
+    next();
+  } catch (err) {
+    console.error('DB init failed:', err.message);
+    res.status(500).json({ success: false, message: 'Service temporarily unavailable' });
+  }
+});
+
 // Mount all API routes under /api
 app.use('/api', require('./routes'));
 
