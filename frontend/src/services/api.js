@@ -55,7 +55,7 @@ export const getCareers = async () => {
 
 export const submitContact = async (data) => {
   try {
-    const response = await api.post('/contact', data);
+    const response = await api.post('/api/contact', data);
     return response.data;
   } catch (error) {
     console.error('Error submitting contact form:', error.response?.data || error.message);
@@ -65,7 +65,7 @@ export const submitContact = async (data) => {
 
 export const submitApplication = async (data) => {
   try {
-    const response = await api.post('/apply', data);
+    const response = await api.post('/api/apply', data);
     return response.data;
   } catch (error) {
     console.error('Error submitting job application:', error.response?.data || error.message);
