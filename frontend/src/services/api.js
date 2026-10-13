@@ -6,8 +6,7 @@ import axios from 'axios';
 // const getBaseUrl = () => return "https://atrisma-website-4cmx.vercel.app"
 
 
-const API_BASE_URL = "https://atrisma-website-4cmx.vercel.app"
-
+const API_BASE_URL = "https://atrisma-website.vercel.app"
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
