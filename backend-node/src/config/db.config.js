@@ -9,9 +9,16 @@ const sequelize = new Sequelize(
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     dialect: 'mysql',
-    logging: false, // Set to console.log to match Spring Boot's spring.jpa.show-sql=true if desired
+    logging: false,
+    dialectOptions: process.env.DB_SSL === 'true'
+      ? {
+          ssl: {
+            rejectUnauthorized: false,
+          },
+        }
+      : {},
     define: {
-      timestamps: false // Spring Boot entities did not have creation/update timestamps by default unless specified
+      timestamps: false
     }
   }
 );
