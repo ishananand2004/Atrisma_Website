@@ -6,7 +6,7 @@ const app = express();
 
 // Middleware mimicking Spring Boot CorsConfig
 const corsOptions = {
-  origin: ["https://atrisma-website-8nfi.vercel.app/"],
+  origin: ["https://atrisma-website-8nfi.vercel.app"],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['*'],
   credentials: false
