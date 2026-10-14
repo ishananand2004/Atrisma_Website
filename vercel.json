@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "installCommand": "npm install && cd backend-node && npm install",
   "builds": [
     {
       "src": "backend-node/server.js",
