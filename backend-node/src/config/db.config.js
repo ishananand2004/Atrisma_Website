@@ -1,6 +1,10 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
+// Explicit require so Vercel's Node File Tracer bundles mysql2
+// (Sequelize loads it dynamically, which NFT can't trace)
+require('mysql2');
+
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
